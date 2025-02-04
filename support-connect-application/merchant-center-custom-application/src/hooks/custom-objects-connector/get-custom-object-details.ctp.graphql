@@ -1,0 +1,9 @@
+query GetCustomObjectDetails ($customObjectKey: String!, $customObjectContainer: String!) {
+  customObject(key: $customObjectKey, container: $customObjectContainer) {
+    id
+    container
+    key
+    value
+    version
+  }
+}

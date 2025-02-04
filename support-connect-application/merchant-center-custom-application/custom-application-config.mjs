@@ -1,0 +1,45 @@
+import { PERMISSIONS, entryPointUriPath } from "./src/constants";
+
+/**
+ * @type {import('@commercetools-frontend/application-config').ConfigOptionsForCustomApplication}
+ */
+const config = {
+	name: "Custom Objects",
+	entryPointUriPath,
+	cloudIdentifier: "gcp-eu",
+	env: {
+		development: {
+			initialProjectKey: "${env:INITIAL_PROJECT_KEY}",
+		},
+		production: {
+			applicationId: "cm0pgzuxk003i1067ttiav3qh",
+			url: "https://your_app_hostname.com",
+		},
+	},
+	oAuthScopes: {
+		view: ["view_products"],
+		manage: ["manage_products"],
+	},
+	icon: "${path:@commercetools-frontend/assets/application-icons/rocket.svg}",
+	mainMenuLink: {
+		defaultLabel: "Template starter",
+		labelAllLocales: [],
+		permissions: [PERMISSIONS.View],
+	},
+	submenuLinks: [
+		{
+			uriPath: "channels",
+			defaultLabel: "Channels",
+			labelAllLocales: [],
+			permissions: [PERMISSIONS.View],
+		},
+		{
+			uriPath: "custom-objects",
+			defaultLabel: "Custom Objects",
+			labelAllLocales: [],
+			permissions: [PERMISSIONS.View, PERMISSIONS.Manage],
+		},
+	],
+};
+
+export default config;
