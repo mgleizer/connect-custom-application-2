@@ -17,8 +17,8 @@ const config = {
 		},
 	},
 	oAuthScopes: {
-		view: ["view_products"],
-		manage: ["manage_products"],
+		view: ["view_key_value_documents"],
+		manage: ["manage_key_value_documents"],
 	},
 	icon: "${path:@commercetools-frontend/assets/application-icons/rocket.svg}",
 	mainMenuLink: {
@@ -27,12 +27,6 @@ const config = {
 		permissions: [PERMISSIONS.View],
 	},
 	submenuLinks: [
-		{
-			uriPath: "channels",
-			defaultLabel: "Channels",
-			labelAllLocales: [],
-			permissions: [PERMISSIONS.View],
-		},
 		{
 			uriPath: "custom-objects",
 			defaultLabel: "Custom Objects",
