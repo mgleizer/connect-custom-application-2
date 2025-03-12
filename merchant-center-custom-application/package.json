@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "private": true,
+  "license": "MIT",
   "scripts": {
     "build": "mc-scripts build",
     "start": "mc-scripts start",
