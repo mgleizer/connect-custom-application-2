@@ -9,7 +9,7 @@ const config = {
 	cloudIdentifier: "gcp-eu",
 	env: {
 		development: {
-			initialProjectKey: "${env:INITIAL_PROJECT_KEY}",
+			initialProjectKey: "music-shop",
 		},
 		production: {
 			applicationId: "cm0pgzuxk003i1067ttiav3qh",

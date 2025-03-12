@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkcustom_objects=self.webpackChunkcustom_objects||[]).push([[9765],{"./src/i18n/data/en.json":s=>{s.exports={}}}]);
