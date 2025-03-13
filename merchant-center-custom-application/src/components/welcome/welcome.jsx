@@ -1,3 +1,4 @@
+import React from 'react';
 import PropTypes from "prop-types";
 import { useRouteMatch, Link as RouterLink } from "react-router-dom";
 import { useIntl } from "react-intl";
