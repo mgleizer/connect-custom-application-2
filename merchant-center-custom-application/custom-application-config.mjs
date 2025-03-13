@@ -12,7 +12,7 @@ const config = {
 			initialProjectKey: "music-shop",
 		},
 		production: {
-			applicationId: "cm0pgzuxk003i1067ttiav3qh",
+			applicationId: "${env:CUSTOM_APPLICATION_ID}",
 			url: "${env:APPLICATION_URL}",
 		},
 	},
@@ -22,7 +22,7 @@ const config = {
 	},
 	icon: "${path:@commercetools-frontend/assets/application-icons/rocket.svg}",
 	mainMenuLink: {
-		defaultLabel: "Template starter",
+		defaultLabel: "custom-objects",
 		labelAllLocales: [],
 		permissions: [PERMISSIONS.View],
 	},
