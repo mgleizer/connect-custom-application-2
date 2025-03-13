@@ -5,7 +5,7 @@ import { PERMISSIONS, entryPointUriPath } from "./src/constants";
  */
 const config = {
 	name: "Custom Objects",
-	entryPointUriPath,
+	entryPointUriPath: '${env:ENTRY_POINT_URI_PATH}',
 	cloudIdentifier: "gcp-eu",
 	env: {
 		development: {
