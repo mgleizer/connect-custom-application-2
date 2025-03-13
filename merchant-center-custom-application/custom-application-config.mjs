@@ -13,7 +13,7 @@ const config = {
 		},
 		production: {
 			applicationId: "cm0pgzuxk003i1067ttiav3qh",
-			url: "https://mc.europe-west1.gcp.commercetools.com/",
+			url: "${env:APPLICATION_URL}",
 		},
 	},
 	oAuthScopes: {
